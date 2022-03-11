@@ -1,29 +1,4 @@
-const data = [
-    {
-        life: 10,
-        power: 100,
-        magic: 5,
-        attribute_1: 0,
-        attribute_2: 2,
-        attribute_3: 5,
-    },    
-    {
-        life: 8,
-        power: 100,
-        magic: 5,
-        attribute_1: 0,
-        attribute_2: 2,
-        attribute_3: 5,
-    },
-    {
-        life: 2,
-        power: 120,
-        magic: 5,
-        attribute_1: 0,
-        attribute_2: 2,
-        attribute_3: 5,
-    }
-];
+const data = require('../config/data')['character_stats']
 
 module.exports = {
 
@@ -46,5 +21,6 @@ module.exports = {
     async remove(req, res) {
         const id = parseInt(req.params.id);
     }
+
 
 }
